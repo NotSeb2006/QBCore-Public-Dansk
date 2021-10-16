@@ -1,0 +1,50 @@
+<!--
+ ______ _           __  __      _ _    
+|  ____(_)         |  \/  |    | | |   
+| |__   ___   _____| \  / |  __| | | __
+|  __| | \ \ / / _ \ |\/| | / _` | |/ /
+| |    | |\ V /  __/ |  | || (_| |   < 
+|_|    |_| \_/ \___|_|  |_(_)__,_|_|\_\
+
+Vores sider:
+  • Hjemmesiden: https://fivem.dk
+  • Patreon: https://patreon.com/dkfivem
+  • Facebook: https://facebook.com/dkfivem
+  • Discord: https://discord.gg/dkfivem
+  • DybHosting: https://dybhosting.eu/ - Rabatkode: dkfivem10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="meter.css">
+    <title>Taxi Meter</title>
+</head>
+    <body>
+        <div class="container">
+            <img src="./g5-meter.png" alt="g5-meter" id="g5-meter">
+            <div class="g5-meter">
+
+                <span id="total-price">0.00 DKK</span>
+                <span id="total-price-label">Pris totalt DKK</span>
+
+                <span id="total-distance">0.0 M</span>
+                <span id="total-distance-label">Distance</span>
+
+                <span id="total-price-per-100m"></span>
+                <span id="total-price-per-100m-label">Pris  pr/ 100m</span>
+
+                <div class="toggle-meter-btn">
+                    <p>Afbrudt</p>
+                </div>
+            </div>
+        </div>
+        <script src="./meter.js"></script>
+    </body>
+</html>

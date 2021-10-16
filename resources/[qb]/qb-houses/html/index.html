@@ -1,0 +1,148 @@
+<!--
+ ______ _           __  __      _ _    
+|  ____(_)         |  \/  |    | | |   
+| |__   ___   _____| \  / |  __| | | __
+|  __| | \ \ / / _ \ |\/| | / _` | |/ /
+| |    | |\ V /  __/ |  | || (_| |   < 
+|_|    |_| \_/ \___|_|  |_(_)__,_|_|\_\
+
+Vores sider:
+  • Hjemmesiden: https://fivem.dk
+  • Patreon: https://patreon.com/dkfivem
+  • Facebook: https://facebook.com/dkfivem
+  • Discord: https://discord.gg/dkfivem
+  • DybHosting: https://dybhosting.eu/ - Rabatkode: dkfivem10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+    <body style="background:rgba(255, 255, 255, 0)">
+        <div class="container" id="noselect">
+            <div class="contract-main">
+                <img src="./img/dynasty8-logo.png" class="dynasty8-logo">
+                <span id="welcome-text">Velkommen <span id="welcome-name"></span></span>
+                <div class="contract-sub">
+                    <div class="contract-header"><span id="contract-header-text">Bolig kontrakter</span></div>
+                    <div class="contract-information">
+                        <div class="contract-information-header">
+                            <span id="contract-information-text">Køb bolig</span>
+                        </div>
+                        <div class="property-info">
+                            <span class="property-info-text">Bolig adresse #</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-adress"></span>
+                        </div>
+                        <div class="property-info">
+                            <span class="property-info-text">Bolig prisen</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-price"></span>
+                        </div>
+                        <div class="property-info">
+                            <span class="property-info-text">Agenturgebyrer (5%)</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-brokerfee"></span>
+                        </div>
+                        <div class="property-info">
+                            <span class="property-info-text">Bank gebyr (10%)</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-bankfee"></span>
+                        </div>   
+                        <div class="property-info">
+                            <span class="property-info-text">Moms (6%)</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-taxes"></span>
+                        </div>
+                        <div class="property-info">
+                            <span class="property-info-text">Total pris af bolig</span>
+                            <div id="propert-info-hr"></div>
+                            <span class="property-info-info" id="property-totalprice"></span>
+                        </div>
+                        <div class="property-cancel">
+                            <span id="property-cancel-text">Afbryd</span>
+                        </div>
+                        <div class="property-accept">
+                            <span id="property-accept-text">Køb bolig</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contract-sell">
+                
+            </div>
+        </div>
+        <div id="house-cam">
+            <span id="cam-label">Test</span>
+            <span id="cam-type">#Frontdoor</span>
+            <span id="cam-connection">CONNECTED</span>
+        </div>
+        <div id="decorate">
+            <div class="decorate-header">
+                <div class="decorate-header-buttons">
+                    <div class="header-btn" id="objects-list"><p>Objects</p></div>
+                    <div class="header-btn" id="close"><p>Close</p></div>
+                    <div class="header-btn" id="my-objects"><p>My Objects</p></div>
+                </div>
+            </div>
+            <div class="object-load-status">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div class="decorate-confirm">
+                <p>Er du sikker på du vil købe dette objekt</p>
+                <div class="decorate-confirm-buttons">
+                    <button class="btn btn-group btn-spawnobj" id="buy-object">Ja</button>
+                    <button class="btn btn-group btn-spawnobj" id="cancel-object">Nej</button>
+                </div>
+            </div>
+            <div class="decorate-keys">
+                <ul id="decorate-keys" style="list-style-type:disc;">
+                    <li>WASD/Mus for at bevæge kamera vinkel.</li>
+                    <li>Piltatser for at bevæge objekter.</li>
+                    <li>PAGE UP/DOWN for at bevæge objekter op/ned.</li>
+                    <li>LEFTALT for at placere objektet på gulvet</object>.</li>
+                    <li>F3 for at dreje og bevæge.</li>
+                    <li>ENTER for at købe og placere objektet.</li>
+                    <li>F5 for at slå mus til/fra.</li>
+                    <li>ESC for at afbryde dekorations mode.</li>
+                </ul>
+            </div>
+            <div class="decorate-footer">
+                <div class="decorate-footer-buttons">
+                    
+                </div>
+            </div>
+            <div class="decorate-items">
+                <!-- <div class="decorate-item selected-object">
+                    <span id="decorate-item-name"><b>Object: </b>Wooden chair</span>
+                    <span id="decorate-item-category">Price: <strong>$100</strong></span></span>
+                </div> -->
+            </div>
+            <!-- <div class="object-selectors">
+                <div class="form-group object-category">
+                    <label for="obj-sel" class="object-select-label">Choose a object:</label>
+                    <select class="form-control select-object" id="sel1">
+                        <option value="v_ilev_m_sofa">White couch</option>
+                        <option value="prop_table_06_chr">Working chair</option>
+                        <option value="v_res_m_stool">Tabeltje</option>
+                        <option value="v_res_m_l_chair1">World war two chair/option>
+                    </select>
+                    <br />
+                    <button class="btn btn-group btn-spawnobj" id="spawn-object">Spawn</button>
+                </div>
+            </div> -->
+        </div>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

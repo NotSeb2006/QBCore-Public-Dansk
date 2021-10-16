@@ -1,0 +1,41 @@
+<!--
+ ______ _           __  __      _ _    
+|  ____(_)         |  \/  |    | | |   
+| |__   ___   _____| \  / |  __| | | __
+|  __| | \ \ / / _ \ |\/| | / _` | |/ /
+| |    | |\ V /  __/ |  | || (_| |   < 
+|_|    |_| \_/ \___|_|  |_(_)__,_|_|\_\
+
+Vores sider:
+  • Hjemmesiden: https://fivem.dk
+  • Patreon: https://patreon.com/dkfivem
+  • Facebook: https://facebook.com/dkfivem
+  • Discord: https://discord.gg/dkfivem
+  • DybHosting: https://dybhosting.eu/ - Rabatkode: dkfivem10
+-->
+
+<html>
+    <head>
+        <!-- Need to include jQuery! -->
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+        <script>
+            var audioPlayer = null;
+            // Listen for NUI Messages.
+            window.addEventListener('message', function(event) {
+                // Check for playSound transaction
+                if (event.data.transactionType == "playSound") {
+				
+                  if (audioPlayer != null) {
+                    audioPlayer.pause();
+                  }
+
+                  audioPlayer = new Howl({src: ["./sounds/" + event.data.transactionFile + ".ogg"]});
+                  audioPlayer.volume(event.data.transactionVolume);
+                  audioPlayer.play();
+
+                }
+            });
+        </script>
+    </head>
+</html>

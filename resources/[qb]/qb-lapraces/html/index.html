@@ -1,0 +1,51 @@
+<!--
+ ______ _           __  __      _ _    
+|  ____(_)         |  \/  |    | | |   
+| |__   ___   _____| \  / |  __| | | __
+|  __| | \ \ / / _ \ |\/| | / _` | |/ /
+| |    | |\ V /  __/ |  | || (_| |   < 
+|_|    |_| \_/ \___|_|  |_(_)__,_|_|\_\
+
+Vores sider:
+  • Hjemmesiden: https://fivem.dk
+  • Patreon: https://patreon.com/dkfivem
+  • Facebook: https://facebook.com/dkfivem
+  • Discord: https://discord.gg/dkfivem
+  • DybHosting: https://dybhosting.eu/ - Rabatkode: dkfivem10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapraces</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="ui">
+                <div class="editor">
+                    <span id="editor-racename">Race: Test Race</span>
+                    <span id="editor-checkpoints">Checkpoints: 1 / ?</span>
+                    <span id="editor-keys-add"><span style="color: rgb(0, 201, 0);">7</span> - Tilføj checkpoint</span>
+                    <span id="editor-keys-tiredistance"></span>
+                    <span id="editor-keys-delete"></span>
+                    <span id="editor-keys-cancel"><span style="color: rgb(255, 43, 43);">9</span> - Luk Editor</span>
+                    <span id="editor-keys-save"><span style="color: rgb(0, 201, 0);">K</span> - Gem Race</span>
+                </div>
+
+                <div class="race">
+                    <span id="race-racename">Race: Test Race</span>
+                    <span id="race-checkpoints">Checkpoints: 1 / 1</span>
+                    <span id="race-lap">Lap: 1 / 1</span>
+                    <span id="race-time">Current Lap: </span>
+                    <span id="race-besttime">Best Lap: </span>
+                    <span id="race-totaltime">Total Time: </span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
