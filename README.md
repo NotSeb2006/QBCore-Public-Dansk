@@ -1,4 +1,5 @@
-# QB Core---Oversat-til-dansk
+# QB Core - Danish Translation
+
 Dette er QB Core oversat, fra os til jer! &lt;3
 
 Har ud nogen problemer med disse scripts, fejl, problemer med opsætning eller andet?  
@@ -8,8 +9,6 @@ Så kom forbi https://fivem.dk/discord og få hjælp.
 !!DETTE ER IKKE ET FÆRDIGT PRODUKT!!
 Husk at rapportere fejl eller fejl i oversættelser, vi opdatere løbende for fejl og mangler!
 Som patreon har du muligheden for at komme med forslag, og vil glædeligt komme med feedback på det. 
-
-Der er expoits i filerne som skal ordnes/kigges på. Videresalg, reupload eller byt, må under INGEN omsændigheder ske! Det er noget der er blevet laget MEGET tid i, vær venlig at repsektere det, mange tak! <3
 
 Hilsen FiveM.dk
 
