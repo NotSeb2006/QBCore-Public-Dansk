@@ -6,9 +6,9 @@ Har ud nogen problemer med disse scripts, fejl, problemer med opsætning eller a
 Så kom forbi https://fivem.dk/discord og få hjælp.
 
 ## Opdatering
-!!DETTE ER IKKE ET FÆRDIGT PRODUKT!!
-Husk at rapportere fejl eller fejl i oversættelser, vi opdatere løbende for fejl og mangler!
-Som patreon har du muligheden for at komme med forslag, og vil glædeligt komme med feedback på det. 
+Vi opdatere løbende for fejl og mangler!
+Skulle du have et fix eller en tilføjelse sdom du mener kunne gavne andre, er du velkommen til at lave et pull-request.
+Som patreon har du muligheden for at komme med forslag, og vi vil glædeligt komme med feedback til det. 
 
 Hilsen FiveM.dk
 
