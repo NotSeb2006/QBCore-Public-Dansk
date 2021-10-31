@@ -1,4 +1,4 @@
-# QB Core - Danish Translation
+# QB Core - Danish Translation (Basic)
 
 Dette er QB Core oversat, fra os til jer! &lt;3
 
