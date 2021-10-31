@@ -30,3 +30,11 @@ https://dybhosting.eu/ - Rabatkode: DKFiveM10
 2. Slet alle filer inden i "artifact" mappen
 3. Åben zip filen du downloaded i step 1, og overfør alle filerne ind i "artifact" mappen
 4. Din server er nu opdateret!
+
+## Credits
+All credits goes to the developers behind QB Core https://github.com/qbcore-framework
+
+Translation - NicoDK6400#0001
+Graphics addon - Momsey#6161
+Changes and updates NicoDK6400#0001 & Walter#9999
+FiveM Defender - Ezague#6012
